@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@200&display=swap');
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 22px;
+}
+#map img{
+    width: 100%;
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+}
+
+a{
+    text-decoration: none;
+}
+.link{
+    display: inline-block;
+    width: 301px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    
+}
+.link-text{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.link-text P{
+    color: white;
+    padding: 26.6px;
+    font-weight: 100;
+    
+}
+.link img{
+    width: 11%;
+    background-color: hsl(24, 56%, 63%);;
+}
+.location-text{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding-top: 3%;
+    margin-top: 0px;
+}
+.left{
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+h1{
+    font-size: 56px;
+}
+h2{
+    color: hsl(24, 56%, 63%);
+    padding-bottom: 3%;
+}
+.right p{
+    font-family: 'Outfit';
+    padding-right:40% ;
+    padding-bottom: 3%;
+    font-size: 0.8em;
+}
+
+footer{
+    background-color: hsl(24, 56%, 63%);
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0px;
+}
+footer p{
+    max-width: 24%;
+    font-family: 'Outfit';
+    font-size: medium;
+}
+footer h3,.socials{
+    display: flex;
+    align-items: center;
+}
+footer a{
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.socials img {
+  filter: invert(100%) grayscale(100%);
+}
+@media (max-width:786px) {
+    .location-text{
+        flex-direction: column;
+        padding-left: 34px;
+    }
+    .left{
+        justify-content: left;
+    }
+    h1{
+        font-size: 6wv;
+        margin-bottom: 5%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer h3{
+        padding-left: 11%;
+        font-size: 9vw;
+    }
+    footer p{
+        margin: 20px 0px;
+        min-width: 90%;
+        padding-left: 11%;
+    }
+    footer .socials{
+        margin-left: 9%;
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 23%;
+    }
+}
+
+

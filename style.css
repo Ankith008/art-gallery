@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@200&display=swap');
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Big Shoulders Display', cursive;
+    flex-direction: column;
+    font-size: 22px;
+    width: 100%;
+    min-height: 100%;
+}
+header{
+    
+    display: flex;
+    position: relative;
+    width: 100%;
+
+}
+.head{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.black-space{
+    background-color: rgb(0, 0, 0); 
+    width: 430px;
+    height: 99%;
+    
+}
+header img{
+  width: 50%;
+  
+}
+h1{
+    position: absolute;
+    display: inline-block;
+    font-size: 6vw;
+    font-weight: 900;
+    background: linear-gradient(to right,white 60%,black 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    top: 16%;
+    left: 11%;
+}
+#para1{
+    position: absolute;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.7vw;
+    display: inline-block;
+    width: 30vw;
+    height: 100px;
+    /* transform: translate(34%,-33%); */
+    font-weight: 500;
+    top:24%;
+    left:58%;
+}
+a{
+    text-decoration: none;
+}
+.link{
+    display: inline-block;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 54%;
+    left: 55%;
+    
+}
+.link-text{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.link-text P{
+    color: white;
+    padding: 26.6px;
+    font-weight: 100;
+}
+.link img{
+    width: 11%;
+    background-color: hsl(24, 56%, 63%);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 14vh;
+    
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 32% 11% 35%;
+    column-gap: 1.3%;
+    row-gap: 1.3%;
+    grid-template-rows: 37% 31% 30%; 
+    width: 90%;
+    margin-left: 17vw;
+    
+}
+.img-1{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.your-day{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+    padding-top: 12%;
+}
+.your-day h2{
+    font-size: 4vw;
+    padding-left: 7%;
+    padding-bottom: 3%;
+}
+.your-day p{
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 1.4vw;
+    padding-left: 7%;
+    padding-right: 34%;
+}
+.img-2  {
+    grid-column:1/3 ;
+    grid-row: 2/4;
+   
+}
+.img-3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    
+}
+.be-inspired{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: black;  
+    color: white;
+}
+.be-inspired h2{
+    font-size: 4vw;
+    padding-left: 7%;
+    padding-bottom: 3%;
+    font-weight: 900;
+    padding-top: 8%;
+}
+.be-inspired p{
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 1.4vw;
+    padding-left: 7%;
+    padding-right: 34%;
+}
+.img-1 img,.img-2 img,.img-3 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0px;
+}
+footer p{
+    max-width: 24%;
+    font-family: 'Outfit';
+    font-size: medium;
+}
+footer h3,.socials{
+    display: flex;
+    align-items: center;
+}
+footer a{
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+@media (max-width:786px) {
+    .black-space{
+        display: none;
+    }
+    h1{
+        font-size: 9vw;
+        left: 44%;
+        background: linear-gradient(to right,black 0%,black 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    #para1{
+        font-size: 2vw;
+        width: 36%;
+        top:49%;
+        left: 44%;
+    }
+    .link{
+        top: 70%;
+        left: 38%;
+    }
+    .container{
+        margin-left: 0;
+        row-gap: 1.3%;
+        column-gap: 1.5%;
+        grid-template-columns: 37% 19% 41%;
+        grid-template-rows: 37% 28% 32%;
+    }
+    .your-day h2{
+            font-size: 6vw;
+        }
+        .your-day p{
+            font-size: 2.6vw;
+        }
+        .be-inspired h2{
+            font-size: 6vw;
+        }
+        .be-inspired p{
+            font-size: 3vw;
+        }
+    footer p{
+        max-width: 34%;
+    }
+    footer h3{
+        font-size: 2wh;
+    }
+}
+    @media screen and (min-width: 769px) and (max-width: 786px){
+        .container{
+        margin-left: 0;
+        row-gap: 1.3%;
+        column-gap: 1.5%;
+        grid-template-columns: 37% 19% 41%;
+        grid-template-rows: 27% 32% 39%;
+        }
+        .your-day h2{
+            font-size: 5vw;
+        }
+        .your-day p{
+            font-size: 2vw;
+        }
+        .be-inspired h2{
+            font-size: 6vw;
+        }
+        .be-inspired p{
+            font-size: 3vw;
+        }
+    }
+
+@media (max-width:481px) {
+    header img{
+        width: 100%;
+        top: 0vh;
+    }
+
+    h1{
+        font-size: 14vw;
+        left: 2%;
+        top:107%;
+    }
+    #para1{
+        font-size: 5vw;
+        width: 100%;
+        left: 2%;
+        top: 164%;
+    }
+    .link{
+        left: -45px;
+        top: 215%;
+    }
+    .container{
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 29% 33% 52% 22% 16% ;
+        margin-top: 80%;
+        padding-top: 0vh;
+        row-gap: 30px;
+    }
+    .img-1{
+        grid-column: 1/span 2;
+        grid-row:1/span 2;
+
+    }
+    .your-day{
+        grid-column: 1/span 2;
+        grid-row:2/span 3;
+        width: 100%;
+    }
+    .your-day h2{
+        text-align: left;
+        font-size: 17vw;
+        padding-left: 0;
+        
+    }
+    .your-day p{
+        font-size: 6vw;
+        padding-right: 0;
+        padding-left: 0;
+        
+    }
+    .img-2{
+        grid-column: 1/span 2;
+        grid-row:3/span 4;
+    }
+    .img-3{
+        grid-column: 1/span 2;
+        grid-row:4/span 5;
+    }
+    .be-inspired{
+        grid-column: 1/span 2;
+        grid-row:5/span 6;
+    }
+    .be-inspired h2{
+        text-align: left;
+        font-size: 14vw;
+        padding-left: 4%;
+        
+    }
+    .be-inspired p{
+        font-size: 6vw;
+        padding-right: 0;
+        padding-left: 4%;
+    }
+    footer{
+        margin-top: 220%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer h3{
+        padding-left: 11%;
+        font-size: 9vw;
+    }
+    footer p{
+        margin: 20px 0px;
+        min-width: 90%;
+        padding-left: 11%;
+    }
+    footer .socials{
+        margin-left: 9%;
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 23%;
+    }
+
+}
+
+
+
+
